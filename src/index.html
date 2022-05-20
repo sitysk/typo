@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>タイピング</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/text.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/scorer.js"></script>
+    <script src="js/key_chacker.js"></script>
+    <script src="js/text_builder.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <label>
+        たいぴんぐ げ～む
+      </label>
+      <article>
+        <canvas id="canvassample" width="800" height="450"></canvas>
+      </article>
+      <span class="sec">0</span>.<span class="msec">0</span> 秒経過
+      <div id = "start_button">
+        <input type="button" value="Start(Click or Enter or Space)" name="myFormButton" onclick="myWatch()"><br/>
+        難易度 [easy: <input type="radio" name="level" value="eary">  normal: <input type="radio" name="level" value="normal" checked>  hard: <input type="radio" name="level" value="hard">]<br/>
+        文字数 [10: <input type="radio" name="count" value="10" checked>  50: <input type="radio" name="count" value="50">  100:  <input type="radio" name="count" value="100">]
+        <!-- <input type="button" value="Restart" name="restart" onclick="set_text()">-->
+      </div>
+
+    </div>
+  </body>
+</html>
